@@ -17,7 +17,8 @@ import { useNavigate } from "react-router-dom";
 import './Header.css'
 
 // Icon
-//
+// Searchbar
+// place, date, amount of people
 
 const Header = ({ type }) => {
     const navigate = useNavigate();
@@ -52,7 +53,7 @@ const Header = ({ type }) => {
       });
     };
 
-  // Handle Search input
+  // Handle Search input, state send to List
     const handleSearch = () => {
       navigate("/hotels", { state: { destination, date, options } });
     };
@@ -98,7 +99,7 @@ const Header = ({ type }) => {
           {type !== "list" && (
             <>
               <h1 className="headerTitle">
-                A lifetime of discounts? It's Genius.
+                Find your next stay
               </h1>
               <p className="headerDesc">
                 Get rewarded for your travels – unlock instant savings of 10% or
