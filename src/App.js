@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-    <Home />
+    
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/hotels" element={<List/>}/>
